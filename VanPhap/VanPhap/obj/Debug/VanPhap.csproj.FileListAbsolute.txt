@@ -1,0 +1,166 @@
+E:\Projects\Vân Pháp\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
+E:\Projects\Vân Pháp\VanPhap\VanPhap\bin\Debug\VanPhap.exe
+E:\Projects\Vân Pháp\VanPhap\VanPhap\bin\Debug\VanPhap.pdb
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.AssemblyReference.cache
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.SuggestedBindingRedirects.cache
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.Properties.Resources.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.GenerateResource.cache
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreCompileInputs.cache
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.exe
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.Login.resources
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhap.exe
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhap.pdb
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.AssemblyReference.cache
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.SuggestedBindingRedirects.cache
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.Login.resources
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.Form_SoCauAn.resources
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.Properties.Resources.resources
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.GenerateResource.cache
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreCompileInputs.cache
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.exe
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhapShared.dll
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhapShared.pdb
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhapShared.dll.config
+C:\Git\Van-Phap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhapService.exe
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhapService.pdb
+C:\Git\Van-Phap\VanPhap\VanPhap\bin\Debug\VanPhapService.exe.config
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.AssemblyReference.cache
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.SuggestedBindingRedirects.cache
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.Login.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.Properties.Resources.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.GenerateResource.cache
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreCompileInputs.cache
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.exe
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\VanPhap.exe
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\VanPhap.pdb
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.form_manage.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.form_manage.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauAn.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauSieu.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauAn.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauSieu.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChangePassword.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauAn.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.View.TimChuBai.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChuBai.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChangePassword.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChuBai.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauAn.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.TimChuBai.resources
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\Demo.mdb
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauAn.resources
+E:\Projects\Vân Pháp\VanPhap\VanPhap\bin\Debug\Demo.mdb
+E:\Projects\Vân Pháp\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauAn.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\Demo.mdb
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\VanPhap.exe
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\VanPhap.pdb
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.AssemblyReference.cache
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.SuggestedBindingRedirects.cache
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChangePassword.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChuBai.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauAn.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.Login.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.form_manage.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.Properties.Resources.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauAn.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauAn.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauSieu.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.View.TimChuBai.resources
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.GenerateResource.cache
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreCompileInputs.cache
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.exe
+D:\Github\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Git\V-n-Ph-p\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
+C:\Git\VanPhap\VanPhap\VanPhap\bin\Debug\Demo.mdb
+C:\Git\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
+C:\Git\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.exe
+C:\Git\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.pdb
+C:\Git\VanPhap\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Git\VanPhap\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.AssemblyReference.cache
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.SuggestedBindingRedirects.cache
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChangePassword.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChuBai.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauAn.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.Login.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.form_manage.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.Properties.Resources.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauAn.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauAn.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauSieu.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.TimChuBai.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.GenerateResource.cache
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreCompileInputs.cache
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.exe
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateChuBai.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\bin\Debug\Demo.mdb
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.exe
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.pdb
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.AssemblyReference.cache
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.SuggestedBindingRedirects.cache
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChangePassword.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChuBai.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateChuBai.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauAn.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.Login.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.form_manage.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.Properties.Resources.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauAn.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauAn.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauSieu.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.TimChuBai.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.GenerateResource.cache
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreCompileInputs.cache
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.exe
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauSieu.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauSieu.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauSieu.resources
+C:\Git\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauSieu.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\Demo.mdb
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.exe
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\VanPhap.pdb
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.AssemblyReference.cache
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.SuggestedBindingRedirects.cache
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChangePassword.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChuBai.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateChuBai.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauAn.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauSieu.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.Login.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.form_manage.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.Properties.Resources.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauAn.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauSieu.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauAn.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauSieu.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.TimChuBai.resources
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.GenerateResource.cache
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreCompileInputs.cache
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.exe
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\Aspose.Words.dll
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\Aspose.Words.Pdf2Word.dll
+D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\Aspose.Words.xml

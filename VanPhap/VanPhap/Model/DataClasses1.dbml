@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sql.bsite.net\MSSQL2016;User ID=ngunemay123_db" SettingsObjectName="VanPhap.Properties.Settings" SettingsPropertyName="DataSourceConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DangLe" Member="DangLes">
+    <Type Name="DangLe">
+      <Column Name="ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLoaiLe" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ThoiDiem" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDSo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PhatTu" Member="PhatTus">
+    <Type Name="PhatTu">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhapDanh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NguyenQuan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDNamSinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sao" Member="Saos">
+    <Type Name="Sao">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sao" Member="Sao1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.So" Member="Sos">
+    <Type Name="So">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDChuBai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayLapSo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDLoaiSo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoaiLe" Member="LoaiLes">
+    <Type Name="LoaiLe">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoaiSo" Member="LoaiSos">
+    <Type Name="LoaiSo">
+      <Column Name="ID" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GhiChu_Unicode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Han" Member="Hans">
+    <Type Name="Han">
+      <Column Name="ID" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Han" Member="Han1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Han_Unicode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nam" Member="Nams">
+    <Type Name="Nam">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NamDL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NamAL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTietSo" Member="ChiTietSos">
+    <Type Name="ChiTietSo">
+      <Column Name="IDSo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="IDNamSinh" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PhapDanh" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Sao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Han" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tuoi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
