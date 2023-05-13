@@ -439,9 +439,6 @@ namespace VanPhap.View
                         ls[count].Add(item.SubItems[6].Text);//sao
                         ls[count].Add(item.SubItems[7].Text);//han
                     }
-
-
-
                     count++;
                 }
             }

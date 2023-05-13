@@ -62,12 +62,12 @@
             this.txt_idchubai = new System.Windows.Forms.TextBox();
             this.txt_GioiTinhThemVaoDb = new System.Windows.Forms.TextBox();
             this.pnl_Form = new System.Windows.Forms.Panel();
+            this.txt_tuoiii = new System.Windows.Forms.TextBox();
             this.lbl_PhieuDiemThongTin = new System.Windows.Forms.Label();
             this.pnl_list = new System.Windows.Forms.Panel();
             this.lbl_danhsach = new System.Windows.Forms.Label();
             this.btn_xacnhan = new System.Windows.Forms.Button();
             this.txt_update = new System.Windows.Forms.Button();
-            this.txt_tuoiii = new System.Windows.Forms.TextBox();
             this.pnl_Form.SuspendLayout();
             this.pnl_list.SuspendLayout();
             this.SuspendLayout();
@@ -211,6 +211,7 @@
             this.txt_birthday.Name = "txt_birthday";
             this.txt_birthday.Size = new System.Drawing.Size(271, 42);
             this.txt_birthday.TabIndex = 3;
+            this.txt_birthday.Visible = false;
             // 
             // txt_nickname
             // 
@@ -247,6 +248,7 @@
             this.lbl_Birthday.TabIndex = 41;
             this.lbl_Birthday.Text = "Năm Sinh";
             this.lbl_Birthday.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Birthday.Visible = false;
             // 
             // rbm_Nu
             // 
@@ -432,6 +434,17 @@
             this.pnl_Form.Size = new System.Drawing.Size(845, 229);
             this.pnl_Form.TabIndex = 65;
             // 
+            // txt_tuoiii
+            // 
+            this.txt_tuoiii.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_tuoiii.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tuoiii.Location = new System.Drawing.Point(644, 166);
+            this.txt_tuoiii.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_tuoiii.Name = "txt_tuoiii";
+            this.txt_tuoiii.Size = new System.Drawing.Size(97, 42);
+            this.txt_tuoiii.TabIndex = 64;
+            this.txt_tuoiii.Visible = false;
+            // 
             // lbl_PhieuDiemThongTin
             // 
             this.lbl_PhieuDiemThongTin.AutoSize = true;
@@ -461,7 +474,7 @@
             // 
             this.lbl_danhsach.AutoSize = true;
             this.lbl_danhsach.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_danhsach.Location = new System.Drawing.Point(33, 307);
+            this.lbl_danhsach.Location = new System.Drawing.Point(33, 303);
             this.lbl_danhsach.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_danhsach.Name = "lbl_danhsach";
             this.lbl_danhsach.Size = new System.Drawing.Size(163, 37);
@@ -479,14 +492,13 @@
             this.btn_xacnhan.Location = new System.Drawing.Point(884, 121);
             this.btn_xacnhan.Margin = new System.Windows.Forms.Padding(0);
             this.btn_xacnhan.Name = "btn_xacnhan";
-            this.btn_xacnhan.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_xacnhan.Size = new System.Drawing.Size(175, 49);
+            this.btn_xacnhan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_xacnhan.Size = new System.Drawing.Size(180, 49);
             this.btn_xacnhan.TabIndex = 4;
             this.btn_xacnhan.Text = "Xác nhận";
             this.btn_xacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xacnhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_xacnhan.UseVisualStyleBackColor = true;
-          
             // 
             // txt_update
             // 
@@ -496,26 +508,16 @@
             this.txt_update.ImageIndex = 1;
             this.txt_update.ImageList = this.imageList1;
             this.txt_update.Location = new System.Drawing.Point(884, 64);
-            this.txt_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_update.Margin = new System.Windows.Forms.Padding(0);
             this.txt_update.Name = "txt_update";
-            this.txt_update.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.txt_update.Size = new System.Drawing.Size(173, 49);
+            this.txt_update.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.txt_update.Size = new System.Drawing.Size(180, 49);
             this.txt_update.TabIndex = 6;
             this.txt_update.Text = "Cập nhật";
             this.txt_update.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txt_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.txt_update.UseVisualStyleBackColor = true;
             this.txt_update.Click += new System.EventHandler(this.txt_update_Click);
-            // 
-            // txt_tuoiii
-            // 
-            this.txt_tuoiii.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_tuoiii.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tuoiii.Location = new System.Drawing.Point(644, 166);
-            this.txt_tuoiii.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_tuoiii.Name = "txt_tuoiii";
-            this.txt_tuoiii.Size = new System.Drawing.Size(97, 42);
-            this.txt_tuoiii.TabIndex = 64;
             // 
             // FormUpdateNguoiNhanCauAn
             // 

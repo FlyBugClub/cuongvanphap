@@ -20,6 +20,8 @@ using System.IO;
 using Microsoft.Office.Interop.Word;
 using DocumentFormat.OpenXml.Bibliography;
 using Application = Microsoft.Office.Interop.Word.Application;
+using System.Globalization;
+using DocumentFormat.OpenXml.ExtendedProperties;
 
 namespace VanPhap.View
 {
@@ -496,9 +498,11 @@ namespace VanPhap.View
 
 
                 // Thêm text vào tài liệu
-                Paragraph paragraph = wordDoc.Content.Paragraphs.Add();
-                
-                
+                PageSetup pageSetup = wordDoc.PageSetup;
+                pageSetup.LeftMargin = 20f; // 1 inch = 72 points
+                pageSetup.RightMargin = 20f;
+
+                Paragraph paragraph = wordDoc.Content.Paragraphs.Add();              
                 paragraph.Range.Text = "DÂNG LỄ CẦU AN";
                 paragraph.Range.Font.Size = 20;
                 paragraph.Range.Font.Bold = 1;
@@ -506,37 +510,42 @@ namespace VanPhap.View
                 paragraph.Range.InsertParagraphAfter();
                 /* Word.Range range1 = doc.Range(1, );
 
-                 range1.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;*/
+
+                range1.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;*/
                 Paragraph paragraph1 = wordDoc.Content.Paragraphs.Add();
-                
-                
-                paragraph1.Range.Text = "Chủ bái        : " + txt_name.Text;
+                string name = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(txt_name.Text);
+
+                float leftIndentInch = 1.5f;
+                float leftIndentPoints = leftIndentInch * 72;
+
+                paragraph1.Range.Text = "Chủ bái            : " + name;
                 paragraph1.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphLeft;
-                paragraph1.Range.Font.Size = 14;
+                paragraph1.Format.LeftIndent = leftIndentPoints;
+                paragraph1.Range.Font.Size = 12;
                 paragraph1.Range.Font.Bold = 1;
                 paragraph1.Range.InsertParagraphAfter();
+
+
                 Paragraph paragraph2 = wordDoc.Content.Paragraphs.Add();
-
-
                 paragraph2.Range.Text = "Pháp danh      : "+ txt_nickname.Text;
                 paragraph2.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphLeft;
-                paragraph2.Range.Font.Size = 14;
+                paragraph2.Range.Font.Size = 12;
                 paragraph2.Range.Font.Bold = 1;
                 paragraph2.Range.InsertParagraphAfter();
+
+
                 Paragraph paragraph3 = wordDoc.Content.Paragraphs.Add();
-
-
-                paragraph3.Range.Text = "Địa chỉ        : "+ txt_diachi.Text;
+                paragraph3.Range.Text = "Địa chỉ             : "+ txt_diachi.Text;
                 paragraph3.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphLeft;
-                paragraph3.Range.Font.Size = 14;
+                paragraph3.Range.Font.Size = 12;
                 paragraph3.Range.Font.Bold = 1;
                 paragraph3.Range.InsertParagraphAfter();
+
+
                 Paragraph paragraph4 = wordDoc.Content.Paragraphs.Add();
-
-
-                paragraph4.Range.Text = "Nguyên quán    : "+ txt_nguyenquan.Text;
+                paragraph4.Range.Text = "Nguyên quán : "+ txt_nguyenquan.Text;
                 paragraph4.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphLeft;
-                paragraph4.Range.Font.Size = 14;
+                paragraph4.Range.Font.Size = 12;
                 paragraph4.Range.Font.Bold = 1;
                 paragraph4.Range.InsertParagraphAfter();
 
@@ -550,10 +559,19 @@ namespace VanPhap.View
 
 
                 Paragraph paragraph5 = wordDoc.Content.Paragraphs.Add();
-                
                 Table table = wordDoc.Tables.Add(paragraph5.Range, count + 1, 8);
                 table.Borders.InsideLineStyle = WdLineStyle.wdLineStyleSingle;
                 table.Borders.OutsideLineStyle = WdLineStyle.wdLineStyleSingle;
+
+                table.Columns[1].Width = 40f;
+                table.Columns[2].Width = 40f;
+                table.Columns[3].Width = 150f;
+                table.Columns[5].Width = 65f;
+                table.Columns[6].Width = 65f;
+                table.Columns[7].Width = 70f;
+                table.Columns[8].Width = 65f;
+
+                table.Rows.Height = 2f;
 
                 table.Cell(1, 1).Range.Text = "Nam";
                 table.Cell(1, 2).Range.Text = "Nữ";
@@ -571,7 +589,12 @@ namespace VanPhap.View
                     {
                         table.Cell(i, 1).Range.Text = "X";
                         table.Cell(i, 2).Range.Text = "";
-                        table.Cell(i, 3).Range.Text = ls[i - 2][0];
+
+                        Cell namerow =  table.Cell(i, 3);
+                        namerow.Range.Text = ls[i - 2][0];
+                        namerow.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphLeft;
+                        namerow.Range.Cells.VerticalAlignment = WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
                         table.Cell(i, 4).Range.Text = ls[i - 2][1];
                         table.Cell(i, 5).Range.Text = ls[i - 2][3];
                         table.Cell(i, 6).Range.Text = ls[i - 2][4];
@@ -583,7 +606,12 @@ namespace VanPhap.View
                     {
                         table.Cell(i, 1).Range.Text = "";
                         table.Cell(i, 2).Range.Text = "X";
-                        table.Cell(i, 3).Range.Text = ls[i - 2][0];
+
+                        Cell namerow = table.Cell(i, 3);
+                        namerow.Range.Text = ls[i - 2][0];
+                        namerow.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphLeft;
+                        namerow.Range.Cells.VerticalAlignment = WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
                         table.Cell(i, 4).Range.Text = ls[i - 2][1];
                         table.Cell(i, 5).Range.Text = ls[i - 2][3];
                         table.Cell(i, 6).Range.Text = ls[i - 2][4];
@@ -606,170 +634,6 @@ namespace VanPhap.View
             }
 
         }
-            /*    public void btn_print_Click(object sender, EventArgs e)
-                {
-                    List<string> user = new List<string>();
-                    List<List<string>> ls = new List<List<string>>();
-                    int count = 0;
-
-
-                    ChuBai1 chu = new ChuBai1();
-                    {
-                        chu.Chubai = txt_name.Text;
-                        chu.Phapdanh = txt_nickname.Text;
-                        chu.DiaChi = txt_diachi.Text;
-                        chu.NguyenQuan = txt_nguyenquan.Text;
-                    }
-                    foreach (ListViewItem item in lsv_danhsach_cauan.Items)
-                    {
-                        if (item.Checked)
-                        {
-                            ls.Add(new List<string>());
-                        }
-
-                    }
-                    foreach (ListViewItem item in lsv_danhsach_cauan.Items)
-                    {
-
-                        if (item.Checked)
-                        {
-                            string kiemTra = item.SubItems[3].Text;//gioi tinh
-                            if (kiemTra.Equals("1"))
-                            {
-                                ls[count].Add("X");
-                                ls[count].Add("");
-                                ls[count].Add(item.SubItems[1].Text); //name
-                                ls[count].Add(item.SubItems[2].Text); // phapdanh
-                                ls[count].Add(item.SubItems[4].Text);//nam sinh
-                                ls[count].Add(item.SubItems[5].Text);//tuoi
-                                ls[count].Add(item.SubItems[6].Text);//sao
-                                ls[count].Add(item.SubItems[7].Text);//han
-                            }
-                            else
-                            {
-                                ls[count].Add("");
-                                ls[count].Add("X");
-                                ls[count].Add(item.SubItems[1].Text); //name
-                                ls[count].Add(item.SubItems[2].Text); // phapdanh
-                                ls[count].Add(item.SubItems[4].Text);//nam sinh
-                                ls[count].Add(item.SubItems[5].Text);//tuoi
-                                ls[count].Add(item.SubItems[6].Text);//sao
-                                ls[count].Add(item.SubItems[7].Text);//han
-                            }
-
-
-
-                            count++;
-                        }
-                    }
-
-                    try
-                    {
-                        // tạo tệp mới
-                        string path = @"D:\";
-                        File.Create(path).Close();
-                        using (StreamWriter sw = new StreamWriter(path))
-                        {
-                            sw.WriteLine("<html><head><title>So cau an</title></head>");
-                            sw.WriteLine("<body>");
-                            sw.WriteLine("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"1000\">");
-                            sw.WriteLine("<tbody><tr>");
-                            sw.WriteLine("<td width=\"998\" colspan=\"3\" height=\"60\">");
-                            sw.WriteLine("<p align=\"center\"><b><font size=\"5\" face=\"VNI-Cooper\">DAÂNG LEÃ CAÀU AN</font></b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("</tr>");
-                            sw.WriteLine("<tr>");
-                            sw.WriteLine("<td width=\"265\"></td>");
-                            sw.WriteLine("<td width=\"124\">");
-                            sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Chuû baùi&nbsp;</i></font></b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("<td width=\"605\">");
-                            sw.WriteLine("<p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.Chubai + "");
-                            sw.WriteLine("<font face=\"VNI-Times\" size=\"2\"><span style=\"text-transform: uppercase\">");
-                            sw.WriteLine("</span></font></b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("</tr>");
-                            sw.WriteLine("<tr>");
-                            sw.WriteLine("<td width=\"265\"></td>");
-                            sw.WriteLine("<td width=\"124\">");
-                            sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Phaùp danh&nbsp;</i></font></b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("<td width=\"605\"><p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.Phapdanh + "");
-                            sw.WriteLine("</b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("</tr>");
-                            sw.WriteLine("<tr>");
-                            sw.WriteLine("<td width=\"265\"></td>");
-                            sw.WriteLine("<td width=\"124\">");
-                            sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Nguyeân quaùn</i></font></b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("<td width=\"605\">");
-                            sw.WriteLine("<p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.NguyenQuan + "");
-                            sw.WriteLine("</b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("</tr>");
-                            sw.WriteLine("<tr>");
-                            sw.WriteLine("<td width=\"265\"></td>");
-                            sw.WriteLine("<td width=\"124\">");
-                            sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Ñòa chæ</i></font></b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("<td width=\"605\">");
-                            sw.WriteLine("<p style=\"line - height: 100 %; margin - bottom: 0\"><b>: " + chu.DiaChi + "");
-                            sw.WriteLine("</b></p>");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("</tr>");
-                            sw.WriteLine("<tr>");
-                            sw.WriteLine("<td width=\"265\"><b><font size=\"3\" face=\"vni-times\"><i>&nbsp;</i></font></b></td>");
-                            sw.WriteLine("<td width=\"124\">");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("<td width=\"605\">");
-                            sw.WriteLine("</td>");
-                            sw.WriteLine("</tr></tbody></table>");
-                            sw.WriteLine("<table border=\".1\" width=\"1000\" cellspacing=\"0\" bordercolor=\"#808080\" bordercolorlight=\"#808080\" bordercolordark=\"#FFFFFF\" cellpadding=\"0\" height=\"62\">");
-                            sw.WriteLine("<tbody><tr>");
-                            sw.WriteLine("<td width=\"60\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NAM</font></b></td>");
-                            sw.WriteLine("<td width=\"60\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NÖÕ</font></b></td>");
-                            sw.WriteLine("<td width=\"350\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">HOÏ VAØ TEÂN</font></b></td>");
-                            sw.WriteLine("<td width=\"150\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">PHAÙP DANH</font></b></td>");
-                            sw.WriteLine("<td width=\"150\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NAÊM SINH</font></b></td>");
-                            sw.WriteLine("<td width=\"100\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">TUOÅI</font></b></td>");
-                            sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">SAO</font></b></td>");
-                            sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">HẠN</font></b></td>");
-                            sw.WriteLine("</tr>");
-                            //Dữ liệu thêm vào
-                            foreach (List<string> sublist in ls)
-                            {
-                                sw.WriteLine("<tr>");
-                                foreach (string subitem in sublist)
-                                {
-
-                                    sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b>" + subitem + "</b></td>"); //name //nam//nu
-
-
-                                }
-                                sw.WriteLine("</tr>");
-
-
-                            }
-
-
-
-                            sw.WriteLine("</body></html>");
-
-
-
-                        }
-                        Process.Start("C:\\Git\\test.html");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.ToString());
-
-                    }
-
-
-                }
-        */
             private void button1_Click_1(object sender, EventArgs e)
             {
                 if (txt_name.Text.Equals(""))
@@ -793,6 +657,11 @@ namespace VanPhap.View
         private void button2_Click(object sender, EventArgs e)
         {
             txt_loaiso.Text = loaiso;
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            
         }
     }
 }
