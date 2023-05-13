@@ -27,7 +27,7 @@ namespace VanPhap.View
 {
     public partial class SoCauAn : Form
     {
-        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\VanPhap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
+        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\cuongvanphap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
         OleDbConnection sqlCon = null;
         //Hàm mở kết nối db
         public void OpenConection()
@@ -634,6 +634,7 @@ namespace VanPhap.View
             }
 
         }
+<<<<<<< HEAD
             private void button1_Click_1(object sender, EventArgs e)
             {
                 if (txt_name.Text.Equals(""))
@@ -653,15 +654,204 @@ namespace VanPhap.View
                     frm.Show();
                 }
             }
+=======
+            /*    public void btn_print_Click(object sender, EventArgs e)
+                {
+                    List<string> user = new List<string>();
+                    List<List<string>> ls = new List<List<string>>();
+                    int count = 0;
+
+
+                    ChuBai1 chu = new ChuBai1();
+                    {
+                        chu.Chubai = txt_name.Text;
+                        chu.Phapdanh = txt_nickname.Text;
+                        chu.DiaChi = txt_diachi.Text;
+                        chu.NguyenQuan = txt_nguyenquan.Text;
+                    }
+                    foreach (ListViewItem item in lsv_danhsach_cauan.Items)
+                    {
+                        if (item.Checked)
+                        {
+                            ls.Add(new List<string>());
+                        }
+
+                    }
+                    foreach (ListViewItem item in lsv_danhsach_cauan.Items)
+                    {
+
+                        if (item.Checked)
+                        {
+                            string kiemTra = item.SubItems[3].Text;//gioi tinh
+                            if (kiemTra.Equals("1"))
+                            {
+                                ls[count].Add("X");
+                                ls[count].Add("");
+                                ls[count].Add(item.SubItems[1].Text); //name
+                                ls[count].Add(item.SubItems[2].Text); // phapdanh
+                                ls[count].Add(item.SubItems[4].Text);//nam sinh
+                                ls[count].Add(item.SubItems[5].Text);//tuoi
+                                ls[count].Add(item.SubItems[6].Text);//sao
+                                ls[count].Add(item.SubItems[7].Text);//han
+                            }
+                            else
+                            {
+                                ls[count].Add("");
+                                ls[count].Add("X");
+                                ls[count].Add(item.SubItems[1].Text); //name
+                                ls[count].Add(item.SubItems[2].Text); // phapdanh
+                                ls[count].Add(item.SubItems[4].Text);//nam sinh
+                                ls[count].Add(item.SubItems[5].Text);//tuoi
+                                ls[count].Add(item.SubItems[6].Text);//sao
+                                ls[count].Add(item.SubItems[7].Text);//han
+                            }
+
+
+
+                            count++;
+                        }
+                    }
+
+                    try
+                    {
+                        // tạo tệp mới
+                        string path = @"D:\";
+                        File.Create(path).Close();
+                        using (StreamWriter sw = new StreamWriter(path))
+                        {
+                            sw.WriteLine("<html><head><title>So cau an</title></head>");
+                            sw.WriteLine("<body>");
+                            sw.WriteLine("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"1000\">");
+                            sw.WriteLine("<tbody><tr>");
+                            sw.WriteLine("<td width=\"998\" colspan=\"3\" height=\"60\">");
+                            sw.WriteLine("<p align=\"center\"><b><font size=\"5\" face=\"VNI-Cooper\">DAÂNG LEÃ CAÀU AN</font></b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("</tr>");
+                            sw.WriteLine("<tr>");
+                            sw.WriteLine("<td width=\"265\"></td>");
+                            sw.WriteLine("<td width=\"124\">");
+                            sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Chuû baùi&nbsp;</i></font></b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("<td width=\"605\">");
+                            sw.WriteLine("<p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.Chubai + "");
+                            sw.WriteLine("<font face=\"VNI-Times\" size=\"2\"><span style=\"text-transform: uppercase\">");
+                            sw.WriteLine("</span></font></b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("</tr>");
+                            sw.WriteLine("<tr>");
+                            sw.WriteLine("<td width=\"265\"></td>");
+                            sw.WriteLine("<td width=\"124\">");
+                            sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Phaùp danh&nbsp;</i></font></b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("<td width=\"605\"><p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.Phapdanh + "");
+                            sw.WriteLine("</b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("</tr>");
+                            sw.WriteLine("<tr>");
+                            sw.WriteLine("<td width=\"265\"></td>");
+                            sw.WriteLine("<td width=\"124\">");
+                            sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Nguyeân quaùn</i></font></b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("<td width=\"605\">");
+                            sw.WriteLine("<p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.NguyenQuan + "");
+                            sw.WriteLine("</b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("</tr>");
+                            sw.WriteLine("<tr>");
+                            sw.WriteLine("<td width=\"265\"></td>");
+                            sw.WriteLine("<td width=\"124\">");
+                            sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Ñòa chæ</i></font></b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("<td width=\"605\">");
+                            sw.WriteLine("<p style=\"line - height: 100 %; margin - bottom: 0\"><b>: " + chu.DiaChi + "");
+                            sw.WriteLine("</b></p>");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("</tr>");
+                            sw.WriteLine("<tr>");
+                            sw.WriteLine("<td width=\"265\"><b><font size=\"3\" face=\"vni-times\"><i>&nbsp;</i></font></b></td>");
+                            sw.WriteLine("<td width=\"124\">");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("<td width=\"605\">");
+                            sw.WriteLine("</td>");
+                            sw.WriteLine("</tr></tbody></table>");
+                            sw.WriteLine("<table border=\".1\" width=\"1000\" cellspacing=\"0\" bordercolor=\"#808080\" bordercolorlight=\"#808080\" bordercolordark=\"#FFFFFF\" cellpadding=\"0\" height=\"62\">");
+                            sw.WriteLine("<tbody><tr>");
+                            sw.WriteLine("<td width=\"60\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NAM</font></b></td>");
+                            sw.WriteLine("<td width=\"60\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NÖÕ</font></b></td>");
+                            sw.WriteLine("<td width=\"350\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">HOÏ VAØ TEÂN</font></b></td>");
+                            sw.WriteLine("<td width=\"150\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">PHAÙP DANH</font></b></td>");
+                            sw.WriteLine("<td width=\"150\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NAÊM SINH</font></b></td>");
+                            sw.WriteLine("<td width=\"100\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">TUOÅI</font></b></td>");
+                            sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">SAO</font></b></td>");
+                            sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">HẠN</font></b></td>");
+                            sw.WriteLine("</tr>");
+                            //Dữ liệu thêm vào
+                            foreach (List<string> sublist in ls)
+                            {
+                                sw.WriteLine("<tr>");
+                                foreach (string subitem in sublist)
+                                {
+
+                                    sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b>" + subitem + "</b></td>"); //name //nam//nu
+
+
+                                }
+                                sw.WriteLine("</tr>");
+
+
+                            }
+
+
+
+                            sw.WriteLine("</body></html>");
+
+
+
+                        }
+                        Process.Start("C:\\Git\\test.html");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+
+                    }
+
+
+                }
+        */
+          
+>>>>>>> 6ab327071f3b0ee2ca3ad8e24d69bb99981a2935
 
         private void button2_Click(object sender, EventArgs e)
         {
             txt_loaiso.Text = loaiso;
         }
 
+<<<<<<< HEAD
         private void button1_Click_2(object sender, EventArgs e)
         {
             
+=======
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (txt_name.Text.Equals(""))
+            {
+                MessageBox.Show("Chủ bái đang trống!\nVui lòng chọn || Có sớ || Chưa có sớ || để thêm chủ bái!");
+            }
+            else
+            {
+                FormUpdateChuBai frm = new FormUpdateChuBai();
+
+                frm.idso = txt_idchubai.Text;
+                frm.phapdanh = txt_nickname.Text;
+                frm.name = txt_name.Text;
+                frm.diachi = txt_diachi.Text;
+                frm.nguyenquan = txt_nguyenquan.Text;
+                frm.gioitinh = txt_gioi_tinh.Text;
+                frm.loaiso = txt_loaiso.Text;
+                frm.Show();
+            }
+>>>>>>> 6ab327071f3b0ee2ca3ad8e24d69bb99981a2935
         }
     }
 }

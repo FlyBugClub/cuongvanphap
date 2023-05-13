@@ -23,7 +23,7 @@ namespace VanPhap.View
 
 
 
-        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\VanPhap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
+        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\cuongvanphap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
         OleDbConnection sqlCon = null;
         //Hàm mở kết nối db
         public void OpenConection()
@@ -53,6 +53,7 @@ namespace VanPhap.View
         public string nguyenquan { get; set; }
         public string gioitinh { get; set; }
         public string phapdanh { get; set; }
+        public string loaiso { get; set; }
         private void FormUpdateChuBai_Load(object sender, EventArgs e)
         {
             if (gioitinh == "Nam")
@@ -124,17 +125,31 @@ namespace VanPhap.View
                         command.Parameters.AddWithValue("?", diachi);
                         command.Parameters.AddWithValue("?", nguyenquan);
                         command.Parameters.AddWithValue("?", id);
-
+                        
                         command.ExecuteNonQuery();
                         MessageBox.Show("Cập nhật thành công");
-                        SoCauAn form1 = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
-                        
-                        form1.chubai = hoten;
-                        form1.phapdanh = phapdanh;
-                        form1.diachi = diachi;
-                        form1.nguyenquan = nguyenquan;
-                        form1.UpdateData("Cuong");
-                        this.Close();
+                        string loaiso1 = loaiso;
+                        if(loaiso1.Equals("CauAn"))
+                        {
+                            SoCauAn form1 = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
+
+                            form1.chubai = hoten;
+                            form1.phapdanh = phapdanh;
+                            form1.diachi = diachi;
+                            form1.nguyenquan = nguyenquan;
+                            form1.UpdateData("Cuong");
+                            this.Close();
+                        }
+                        else
+                        {
+                            SoCauSieu form1 = Application.OpenForms.OfType<SoCauSieu>().FirstOrDefault();
+                            form1.chubai = hoten;
+                            form1.phapdanh = phapdanh;
+                            form1.diachi = diachi;
+                            form1.nguyenquan = nguyenquan;
+                            form1.UpdateData("Cuong");
+                            this.Close();
+                        }                      
                     }
 
                 }

@@ -13,7 +13,7 @@ namespace VanPhap.View
 {
     public partial class NguoiNhanCauSieu : Form
     {
-        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\VanPhap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
+        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\cuongvanphap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
         OleDbConnection sqlCon = null;
         public NguoiNhanCauSieu()
         {
@@ -394,6 +394,9 @@ namespace VanPhap.View
                                     if (rowsAffected > 0)
                                     {
                                         MessageBox.Show("Dữ liệu đã được thêm thành công vào cơ sở dữ liệu.");
+                                        SoCauSieu form1 = Application.OpenForms.OfType<SoCauSieu>().FirstOrDefault();
+                                        form1.UpdateData("Cuong");
+                                        this.Close();
                                         // Sử dụng listView để thao tác với ListView
                                     }
                                     else
@@ -476,6 +479,9 @@ namespace VanPhap.View
                                 if (rowsAffected > 0)
                                 {
                                     MessageBox.Show("Dữ liệu đã được thêm thành công vào cơ sở dữ liệu.");
+                                    SoCauSieu form1 = Application.OpenForms.OfType<SoCauSieu>().FirstOrDefault();
+                                    form1.UpdateData("Cuong");
+                                    this.Close();
                                     // Sử dụng listView để thao tác với ListView
                                 }
                                 else

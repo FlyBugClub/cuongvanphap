@@ -966,9 +966,7 @@ namespace VanPhap.View
                     {
                         // Xóa thành công
                         MessageBox.Show("Cập nhật thành công");
-                        SoCauAn form1 = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
-                        form1.UpdateData("Cuong");
-                        this.Close();
+                        HienDanhSach();
                     }
                     else
                     {
@@ -982,6 +980,13 @@ namespace VanPhap.View
         private void lsv_danhsach_cauan_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_xacnhan_Click(object sender, EventArgs e)
+        {
+            SoCauAn form1 = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
+            form1.UpdateData("Cuong");
+            this.Close();
         }
     }
     }

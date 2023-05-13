@@ -443,7 +443,10 @@
             this.txt_tuoiii.Name = "txt_tuoiii";
             this.txt_tuoiii.Size = new System.Drawing.Size(97, 42);
             this.txt_tuoiii.TabIndex = 64;
+<<<<<<< HEAD
             this.txt_tuoiii.Visible = false;
+=======
+>>>>>>> 6ab327071f3b0ee2ca3ad8e24d69bb99981a2935
             // 
             // lbl_PhieuDiemThongTin
             // 
@@ -499,6 +502,10 @@
             this.btn_xacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xacnhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_xacnhan.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            this.btn_xacnhan.Click += new System.EventHandler(this.btn_xacnhan_Click);
+>>>>>>> 6ab327071f3b0ee2ca3ad8e24d69bb99981a2935
             // 
             // txt_update
             // 

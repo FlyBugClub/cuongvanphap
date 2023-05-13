@@ -164,6 +164,7 @@ D:\Github\oppp\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
 D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\Aspose.Words.dll
 D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\Aspose.Words.Pdf2Word.dll
 D:\Github\oppp\VanPhap\VanPhap\VanPhap\bin\Debug\Aspose.Words.xml
+<<<<<<< HEAD
 E:\Projects\Pháp Vân\cuongvanphap\VanPhap\VanPhap\bin\Debug\Demo.mdb
 E:\Projects\Pháp Vân\cuongvanphap\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
 E:\Projects\Pháp Vân\cuongvanphap\VanPhap\VanPhap\bin\Debug\VanPhap.exe
@@ -193,3 +194,34 @@ E:\Projects\Pháp Vân\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.Cor
 E:\Projects\Pháp Vân\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
 E:\Projects\Pháp Vân\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.exe
 E:\Projects\Pháp Vân\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+=======
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\Demo.mdb
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\VanPhap.exe.config
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\VanPhap.exe
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\VanPhap.pdb
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\Aspose.Words.dll
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\Aspose.Words.Pdf2Word.dll
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\Aspose.Words.xml
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.AssemblyReference.cache
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.SuggestedBindingRedirects.cache
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChangePassword.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.ChuBai.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateChuBai.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauAn.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauSieu.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.Login.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.form_manage.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.Properties.Resources.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauAn.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauSieu.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauAn.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.SoCauSieu.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.View.TimChuBai.resources
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.GenerateResource.cache
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreCompileInputs.cache
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.exe
+D:\Github\oppp\cuongvanphap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+>>>>>>> 6ab327071f3b0ee2ca3ad8e24d69bb99981a2935

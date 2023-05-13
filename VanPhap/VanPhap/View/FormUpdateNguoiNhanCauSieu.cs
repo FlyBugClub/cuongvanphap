@@ -14,7 +14,7 @@ namespace VanPhap.View
 {
     public partial class FormUpdateNguoiNhanCauSieu : Form
     {
-        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Git\\VanPhap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
+        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\cuongvanphap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
         OleDbConnection sqlCon = null;
         //Hàm mở kết nối db
         public void OpenConection()
@@ -142,13 +142,6 @@ namespace VanPhap.View
                         command.Parameters.AddWithValue("?", han);
                         command.Parameters.AddWithValue("?", id);
                         command.Parameters.AddWithValue("?", idso);
-
-
-
-
-
-
-
 
                         command.ExecuteNonQuery();
                     }
@@ -989,6 +982,13 @@ namespace VanPhap.View
 
 
             }
+        }
+
+        private void btn_xacnhan_Click_1(object sender, EventArgs e)
+        {
+            SoCauSieu form1 = Application.OpenForms.OfType<SoCauSieu>().FirstOrDefault();
+            form1.UpdateData("Cuong");
+            this.Close();
         }
     }
 }
