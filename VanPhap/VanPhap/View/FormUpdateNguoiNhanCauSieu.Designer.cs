@@ -527,6 +527,7 @@
             this.btn_xacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xacnhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_xacnhan.UseVisualStyleBackColor = true;
+            this.btn_xacnhan.Click += new System.EventHandler(this.btn_xacnhan_Click_1);
             // 
             // FormUpdateNguoiNhanCauSieu
             // 

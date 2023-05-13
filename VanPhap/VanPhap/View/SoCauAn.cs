@@ -25,7 +25,7 @@ namespace VanPhap.View
 {
     public partial class SoCauAn : Form
     {
-        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\VanPhap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
+        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Github\\oppp\\cuongvanphap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
         OleDbConnection sqlCon = null;
         //Hàm mở kết nối db
         public void OpenConection()
@@ -770,29 +770,32 @@ namespace VanPhap.View
 
                 }
         */
-            private void button1_Click_1(object sender, EventArgs e)
-            {
-                if (txt_name.Text.Equals(""))
-                {
-                    MessageBox.Show("Chủ bái đang trống!\nVui lòng chọn || Có sớ || Chưa có sớ || để thêm chủ bái!");
-                }
-                else
-                {
-                    FormUpdateChuBai frm = new FormUpdateChuBai();
-
-                    frm.idso = txt_idchubai.Text;
-                    frm.phapdanh = txt_nickname.Text;
-                    frm.name = txt_name.Text;
-                    frm.diachi = txt_diachi.Text;
-                    frm.nguyenquan = txt_nguyenquan.Text;
-                    frm.gioitinh = txt_gioi_tinh.Text;
-                    frm.Show();
-                }
-            }
+          
 
         private void button2_Click(object sender, EventArgs e)
         {
             txt_loaiso.Text = loaiso;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (txt_name.Text.Equals(""))
+            {
+                MessageBox.Show("Chủ bái đang trống!\nVui lòng chọn || Có sớ || Chưa có sớ || để thêm chủ bái!");
+            }
+            else
+            {
+                FormUpdateChuBai frm = new FormUpdateChuBai();
+
+                frm.idso = txt_idchubai.Text;
+                frm.phapdanh = txt_nickname.Text;
+                frm.name = txt_name.Text;
+                frm.diachi = txt_diachi.Text;
+                frm.nguyenquan = txt_nguyenquan.Text;
+                frm.gioitinh = txt_gioi_tinh.Text;
+                frm.loaiso = txt_loaiso.Text;
+                frm.Show();
+            }
         }
     }
 }
